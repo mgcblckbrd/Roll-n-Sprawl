@@ -1,0 +1,92 @@
+.page {
+  font-size: 18px;
+  color: #fff;
+}
+
+.header {
+  block-size: 100vh;
+  background-image: url(./image/bg-fon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cover {
+  background-color: rgb(255 255 255 / 0.2);
+  block-size: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block-start: 5px;
+  background-color: rgb(0 0 0 / 0.4);
+  font-size: 28px;
+}
+
+.menu-logo {
+  inline-size: 110px;
+}
+
+.logo {
+  transition: transform 2s;
+}
+
+.logo:hover {
+  transform: rotateZ(12deg);
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.menu__list-item-link {
+  text-decoration: none;
+}
+
+.menu__list-item {
+    transition: color 1s, scale 1s;
+}
+
+.menu__list-item::after {
+content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  margin-top: -3px;
+  background-color: rgb(86, 86, 156);
+  transition: width 1s, background-color 0.5s;
+}
+
+.menu__list-item:hover::after {
+    width: 100%;
+
+  }   
+
+
+
+.menu__list-item:hover {
+    color: rgb(86, 86, 156);
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+.social-list-item {
+  transition: transform 1s;
+}
+
+.social-list-item:hover {
+  transform: scale(1.2);
+}
+
+.main-title {
+  font-size: 120px;
+}
